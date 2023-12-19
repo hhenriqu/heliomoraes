@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Multilíngue</title>
+  <style>
+    /* Estilização opcional */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header> <nav>
+    <div>
+    <h1>HelioMoraes.dev</h1>
+    </div>
+    <div>
+      <ul>
+        <li data-translate="menu-pagina-inicial"></li>
+        <li data-translate="menu-sobre"></li>
+        <li data-translate="menu-projetos"></li>
+        <li data-translate="menu-contato"></li>
+      </ul>
+    </div>
+    <div>
+      <button onclick="trocarIdioma('pt-br')">Português</button>
+      <button onclick="trocarIdioma('en')">Inglês</button>
+    </div>
+   </nav></header>
+
+  <h1 data-translate="titulo-pagina"></h1>
+  
+  <p data-translate="texto"></p>
+
+  <section>
+    <div>
+      <p id="texto-digitado"></p>
+      <p>Hi, I'm Helio Moraes. A passionate Developer based in Bragança Paulista, Brazil.</p>
+      <p>linkedin</p>
+      <p>github</p>
+    </div>
+
+
+  </section>
+
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
