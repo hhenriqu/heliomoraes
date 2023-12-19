@@ -1,53 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Página Multilíngue</title>
-  <style>
-    /* Estilização opcional */
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
-    }
-  </style>
-</head>
-<body>
-  <header> <nav>
-    <div>
-    <h1>HelioMoraes.dev</h1>
-    </div>
-    <div>
-      <ul>
-        <li data-translate="menu-pagina-inicial"></li>
-        <li data-translate="menu-sobre"></li>
-        <li data-translate="menu-projetos"></li>
-        <li data-translate="menu-contato"></li>
-      </ul>
-    </div>
-    <div>
-      <button onclick="trocarIdioma('pt-br')">Português</button>
-      <button onclick="trocarIdioma('en')">Inglês</button>
-    </div>
-   </nav></header>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HelioMoraes.Dev</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <h1>HelioMoraes.dev</h1>
+        </div>
+        <div>
+          <ul class="menuItems">
+            <li data-translate="menu-pagina-inicial"></li>
+            <li data-translate="menu-sobre"></li>
+            <li data-translate="menu-projetos"></li>
+            <li data-translate="menu-contato"></li>
+          </ul>
+        </div>
+        <div class="optButtons">
+          <button class="langButton" onclick="trocarIdioma('pt-br')">
+            <img src="./assets/icon_ptbr.png" alt="PT-BR" />
+          </button>
+          <button class="langButton" onclick="trocarIdioma('en')">
+            <img src="./assets/icon_en.png" alt="PT-BR" />
+          </button>
+          <button class="langButton" onclick="toggleTheme()">
+            <img src="./assets/icon_theme.png" alt="PT-BR" />
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  <h1 data-translate="titulo-pagina"></h1>
-  
-  <p data-translate="texto"></p>
+    <main>
+      <section class="home">
+        <div class="homeWrapper">
+          <div class="homeRight">
+            <div class="logoName">
+              <img src="./assets/heliomoraes.png" alt="HelioMoraes" />
+              <p id="texto-digitado"></p>
+            </div>
 
-  <section>
-    <div>
-      <p id="texto-digitado"></p>
-      <p>Hi, I'm Helio Moraes. A passionate Developer based in Bragança Paulista, Brazil.</p>
-      <p>linkedin</p>
-      <p>github</p>
-    </div>
+            <p class="homeText" data-translate="home-text"></p>
 
+            <div class="homeContact">
+              <button class="homeButton">
+                <img src="./assets/icon_linkedin.png" alt="LinkedIn" />
+                <p>LINKEDIN</p>
+              </button>
 
-  </section>
+              <button class="homeButton">
+                <img src="./assets/icon_github.png" alt="Github" />
+                <p>GITHUB</p>
+              </button>
+            </div>
+          </div>
+          <div class="box">
+            <div class="boxInside">
+              <img src="./assets/profile_photo.jpg" alt="photo" />
+            </div>
+          </div>
+        </div>
 
+        <div class="techStackWrapper">
+          <p>Principal Tech Stack |</p>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+            alt="HTML"
+          />
 
-  <script src="translations.js"></script>
-  <script src="script.js"></script>
-</body>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg"
+            alt="CSS"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+          />
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+          />
+
+          
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
+          
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+        <div>
+          <p>About</p>
+          <p>A dedicated Front-end Developer based in Belgrade, Serbia 📍</p>
+          <p>
+            As a Junior Front-End Developer, I possess an impressive arsenal of
+            skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel
+            in designing and maintaining responsive websites that offer a smooth
+            user experience. My expertise lies in crafting dynamic, engaging
+            interfaces through writing clean and optimized code and utilizing
+            cutting-edge development tools and techniques. I am also a team
+            player who thrives in collaborating with cross-functional teams to
+            produce outstanding web applications.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <p>Portfolio</p>
+        <p>Each project is a unique piece of development 🧩</p>
+
+        <div>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p>Titulo</p>
+            <p>
+              A car rental website is an online platform that allows users to
+              rent cars for personal or business use. The website provides an
+              interface for searching, comparing, and reserving cars.
+            </p>
+            <p>React</p>
+            <p>SCSS</p>
+            <p>Code</p>
+            <p>Live Demo</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p>Contact</p>
+        <p>Don't be shy! Hit me up! 👇</p>
+      </section>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
