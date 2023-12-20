@@ -32,10 +32,21 @@ const translations = {
     'menu-projetos': 'Projects',
     'menu-contato': 'Contact',
     'home-text':
-      "Hello! I'm Hélio Moraes, a developer passionate about technology and innovation. 👋",
+      "Hi! I'm Hélio Moraes, a developer passionate about technology and innovation. 👋",
+      'about-title':
+      'About',
+    'about-subtitle':
+    "Hi! I'm Hélio Moraes, a developer passionate about technology and innovation. 👋",
     'about-text':
-      "Hello! I'm Hélio Moraes, a developer passionate about technology and innovation. With 2 years of practical experience and a solid foundation built over 2 years of dedicated studies, I specialize in React and Next.js. I'm known for my proactive and communicative approach, always seeking innovative solutions. I have a passion for contributing to dynamic teams and challenging projects, where my positive energy and technical skills drive collective success. I'm eager to keep growing and learning in new work environments!",
+      "With 2 years of practical experience and a solid foundation built over 2 years of dedicated studies, I specialize in React and Next.js. I'm known for my proactive and communicative approach, always seeking innovative solutions. I have a passion for contributing to dynamic teams and challenging projects, where my positive energy and technical skills drive collective success. I'm eager to keep growing and learning in new work environments!",
       'project-title':'Portfolio',
-    'project-subtitle':'Each project is a unique piece of development 🧩'
+    'project-subtitle':'Each project is a unique piece of development 🧩',
+    'project-code':'Code',
+    'project-live':'Live Demo',
+    'project-tech':'Tech Stack',
+    'projectOne-title':'Energisa - Nova Agência',
+    'projectOne-text':'A digital agency for one of the largest energy companies in Brazil. The website has all user management (Payments, verifications, membership and transfers), and also for designers (Registrations, monitoring and approvals of works)',
+    'contact-title': 'Contact',
+    'contact-subtitle': "Don't be shy! Hit me up! 👉"
   }
 }

@@ -13,10 +13,10 @@
         </div>
         <div>
           <ul class="menuItems">
-            <li data-translate="menu-pagina-inicial"></li>
-            <li data-translate="menu-sobre"></li>
-            <li data-translate="menu-projetos"></li>
-            <li data-translate="menu-contato"></li>
+            <li><a href="#home" data-translate="menu-pagina-inicial"></a></li>
+            <li><a href="#about" data-translate="menu-sobre"></a></li>
+            <li><a href="#projects" data-translate="menu-projetos"></a></li>
+            <li><a href="#contact" data-translate="menu-contato"></a></li>
           </ul>
         </div>
         <div class="optButtons">
@@ -26,6 +26,7 @@
           <button class="langButton" onclick="trocarIdioma('en')">
             <img src="./assets/icon_en.png" alt="PT-BR" />
           </button>
+          <p>|</p>
           <button class="langButton" onclick="toggleTheme()">
             <img src="./assets/icon_theme.png" alt="PT-BR" />
           </button>
@@ -34,7 +35,7 @@
     </header>
 
     <main>
-      <section class="home">
+      <section class="home" id="home">
         <div class="homeWrapper">
           <div class="homeRight">
             <div class="logoName">
@@ -122,7 +123,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="aboutWrapper">
           <img src="./assets/gif_coding.gif" alt="Coding" />
           <div class="aboutTexts">
@@ -133,7 +134,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <div>
           <div class="proWrapperTitle">
             <p class="secTitle" data-translate="project-title"></p>
@@ -191,7 +192,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contactWrapper">
           <div class="contactText">
             <p class="secTitle" data-translate="contact-title">Contact</p>
