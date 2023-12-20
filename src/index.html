@@ -45,15 +45,23 @@
             <p class="homeText" data-translate="home-text"></p>
 
             <div class="homeContact">
-              <button class="homeButton">
+              <a
+                class="homeButton"
+                href="https://www.linkedin.com/in/hhenriqu/"
+                target="_blank"
+              >
                 <img src="./assets/icon_linkedin.png" alt="LinkedIn" />
                 <p>LINKEDIN</p>
-              </button>
+              </a>
 
-              <button class="homeButton">
+              <a
+                class="homeButton"
+                href="https://github.com/hhenriqu"
+                target="_blank"
+              >
                 <img src="./assets/icon_github.png" alt="Github" />
                 <p>GITHUB</p>
-              </button>
+              </a>
             </div>
           </div>
           <div class="box">
@@ -108,59 +116,153 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
           />
 
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
-          
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
+          />
         </div>
       </section>
 
-      <section>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-        <div>
-          <p>About</p>
-          <p>A dedicated Front-end Developer based in Belgrade, Serbia 📍</p>
-          <p>
-            As a Junior Front-End Developer, I possess an impressive arsenal of
-            skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel
-            in designing and maintaining responsive websites that offer a smooth
-            user experience. My expertise lies in crafting dynamic, engaging
-            interfaces through writing clean and optimized code and utilizing
-            cutting-edge development tools and techniques. I am also a team
-            player who thrives in collaborating with cross-functional teams to
-            produce outstanding web applications.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <p>Portfolio</p>
-        <p>Each project is a unique piece of development 🧩</p>
-
-        <div>
-          <div>
-            <img src="" alt="" />
+      <section class="about">
+        <div class="aboutWrapper">
+          <img src="./assets/gif_coding.gif" alt="Coding" />
+          <div class="aboutTexts">
+            <p class="secTitle" data-translate="about-title"></p>
+            <p class="secSubTitle" data-translate="about-subtitle"></p>
+            <p class="aboutText" data-translate="about-text"></p>
           </div>
-          <div>
-            <p>Titulo</p>
-            <p>
-              A car rental website is an online platform that allows users to
-              rent cars for personal or business use. The website provides an
-              interface for searching, comparing, and reserving cars.
+        </div>
+      </section>
+
+      <section class="projects">
+        <div>
+          <div class="proWrapperTitle">
+            <p class="secTitle" data-translate="project-title"></p>
+            <p class="secSubTitle" data-translate="project-subtitle"></p>
+          </div>
+
+          <div class="projectWrapper">
+            <div class="projectImage">
+              <div class="imageContainer">
+                <img
+                  src="./assets/projects/energisa-agencia-digital.png"
+                  alt="Imagem"
+                  class="imagem"
+                />
+              </div>
+            </div>
+            <div class="projectInfos">
+              <p class="projectTitle" data-translate="projectOne-title"></p>
+              <p class="projectText" data-translate="projectOne-text"></p>
+
+              <p class="projectTechTitle" data-translate="project-tech"></p>
+              <div class="projectTechs">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+                />
+              </div>
+
+              <div class="projectsShow">
+                <!-- <p data-translate="project-code"></p>
+                <a href=""></a>
+                <p data-translate="project-live"></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contactWrapper">
+          <div class="contactText">
+            <p class="secTitle" data-translate="contact-title">Contact</p>
+            <p class="secSubTitle" data-translate="contact-subtitle">
+              Don't be shy! Hit me up! 👉
             </p>
-            <p>React</p>
-            <p>SCSS</p>
-            <p>Code</p>
-            <p>Live Demo</p>
+          </div>
+          <div class="contactLinks">
+            <a
+              class="contactButton"
+              href="https://www.linkedin.com/in/hhenriqu/"
+              target="_blank"
+            >
+              <img src="./assets/icon_linkedin.png" alt="LinkedIn" />
+              <p>LINKEDIN</p>
+            </a>
+
+            <a
+              class="contactButton"
+              href="https://github.com/hhenriqu"
+              target="_blank"
+            >
+              <img src="./assets/icon_github.png" alt="Github" />
+              <p>GITHUB</p>
+            </a>
+
+            <a
+              class="contactButton"
+              href="https://api.whatsapp.com/send?phone=+5511963357373&text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+seu+site%21+HelioMoraes.dev+%F0%9F%98%81"
+              target="_blank"
+            >
+              <img src="./assets/icon_wpp.png" alt="Whatsapp" />
+              <p>WHATSAPP</p>
+            </a>
+
+            <a
+              class="contactButton"
+              href="./assets/pdf/CV - Helio Moraes.pdf"
+              download="CV - Helio Moraes.pdf"
+              target="_blank"
+            >
+              <img src="./assets/icon_download_resume.png" alt="Currículo" />
+              <p>CURRÍCULO - "PT-BR"</p>
+            </a>
+
+            <a
+              class="contactButton"
+              href="./assets/pdf/Resume - Helio Moraes.pdf"
+              download="Resume - Helio Moraes.pdf"
+              target="_blank"
+            >
+              <img src="./assets/icon_download_resume.png" alt="Currículo" />
+              <p>RESUME - "EN"</p>
+            </a>
+
+            <a
+              class="contactButton"
+              href="mailto:heliohenriquemoraes@gmail.com"
+              target="_blank"
+            >
+              <img src="./assets/icon_email.png" alt="Email" />
+              <p>E-MAIL</p>
+            </a>
+          </div>
+
+          <div>
+            <p>☎️ +55(11) 9.96335-7373</p>
+            <p>📧 heliohenriquemoraes@gmail.com</p>
+            <p>📍 Bragança Paulista/SP - Brasil</p>
           </div>
         </div>
-      </section>
-
-      <section>
-        <p>Contact</p>
-        <p>Don't be shy! Hit me up! 👇</p>
       </section>
     </main>
 

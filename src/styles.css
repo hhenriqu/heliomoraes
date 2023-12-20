@@ -2,11 +2,13 @@
 
 :root {
   --cor-fundo: #fff; /* Cor de fundo padrão */
+  --cor-fundo-second: #f5f5f5; /* Cor de fundo padrão */
   --cor-texto: #000; /* Cor do texto padrão */
 }
 
 .dark-mode {
   --cor-fundo: #333; /* Cor de fundo para o modo escuro */
+  --cor-fundo-second: #2c2c2c; /* Cor de fundo padrão */
   --cor-texto: #fff; /* Cor do texto para o modo escuro */
 }
 
@@ -33,6 +35,7 @@ body {
 
   box-shadow: 10px 0px 24px rgba(0, 0, 0, 0.3);
   background-color: var(--cor-fundo);
+  z-index: 999;
 }
 
 .menuItems {
@@ -133,7 +136,7 @@ main {
   font-weight: bold;
 }
 
-.homeContact{
+.homeContact {
   display: flex;
 }
 
@@ -225,4 +228,201 @@ main {
 .techStackWrapper p {
   font-size: 24px;
   font-weight: 800;
+}
+
+
+.about {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: var(--cor-fundo-second);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutWrapper {
+  display: flex;
+  gap: 64px;
+}
+
+
+.aboutWrapper img {
+  width: 300px;
+  border-radius: 25px;
+}
+
+.aboutTexts {
+  width: 500px;
+  text-align: justify;
+}
+
+.secTitle {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #08f;
+}
+
+.secSubTitle {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.projects {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proWrapperTitle {
+  text-align: start;
+}
+
+.projectWrapper {
+  max-width: 990px;
+  border-radius: 25px;
+  background: var(--cor-fundo-second);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+
+  padding: 20px;
+  gap: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage {
+  width: 530px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.imagemContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.imagem {
+  width: 530px;
+  height: 100%;
+  flex-shrink: 0;
+  transition: transform 1s ease; /* Adicionando transição para suavizar a rolagem */
+}
+
+.projectImage:hover .imagem {
+  animation: scrollImage 5s linear infinite; /* Adicionando animação de rolagem */
+}
+
+@keyframes scrollImage {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(0%, -70%);
+  }
+}
+
+.projectInfos {
+  width: 310px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectTitle {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.projectText {
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+}
+
+.projectTechTitle{
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.projectTechs {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 24px;
+}
+
+.projectsShow {
+  display: flex;
+}
+
+.contact {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: var(--cor-fundo-second);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactWrapper {
+  width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactText {
+  text-align: left;
+}
+
+.contactButton {
+  background: none;
+  border: none;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactButton img {
+  width: 32px;
+}
+
+.contactButton p {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.contactLinks {
+  display: grid;
+  grid-template-rows: auto auto; /* Duas linhas de altura automática */
+  grid-template-columns: repeat(3, 1fr); /* Três colunas com largura igualmente distribuída */
+  justify-items: start;
+  column-gap: 24px; /* Alinhar itens à esquerda */
+}
+
+/* Estilos para os links (exemplo) */
+.contactLinks a {
+  text-wrap: nowrap;
 }
