@@ -393,7 +393,7 @@
     width: 1366px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .contactText {
@@ -437,7 +437,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -449,32 +449,20 @@
 
   .navbar {
     height: auto;
+    width: 100%;
     padding: 12px;
+    display: flex;
+    justify-content: center;
   }
+
 
   .menuItems {
     display: none;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--cor-fundo);
-    z-index: 9999;
   }
 
-  .menuItems.active {
-    display: flex;
-  }
-
-  .menuItems li {
-    text-align: center;
-  }
 
   .optButtons {
-    display: flex;
+    display: none;
     margin-right: 16px;
   }
 
@@ -498,23 +486,9 @@
     border: #333;
   }
 
-  body::-webkit-scrollbar {
-    width: 5px; /* width of the entire scrollbar */
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: #a19f9f; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-  }
-
-  main {
-    position: relative;
-    margin: 0 auto;
-    margin-top: 60px;
-  }
 
   .home {
-    height: 960px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -522,13 +496,15 @@
   }
 
   .homeWrapper {
-    width: 1366px;
+    width: 100%;
     margin: 0 auto;
 
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+    gap: 16px;
+    margin-top: 300px;
   }
 
   .homeRight {
@@ -547,6 +523,12 @@
   .logoName {
     width: 100%;
     height: 120px;
+    margin: 0 auto;
+  }
+
+  .logoName img {
+    width: 100%;
+    height: auto;
     margin: 0 auto;
   }
 
@@ -807,7 +789,7 @@
     width: 1366px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .contactText {
