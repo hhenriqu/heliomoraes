@@ -800,9 +800,10 @@
   }
 
   .contactWrapper {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
   }
 
@@ -834,11 +835,11 @@
     display: grid;
     grid-template-rows: auto auto; /* Duas linhas de altura automática */
     grid-template-columns: repeat(
-      3,
+      1,
       1fr
     ); /* Três colunas com largura igualmente distribuída */
-    justify-items: start;
-    column-gap: 24px; /* Alinhar itens à esquerda */
+    justify-items: center;
+    row-gap: 8px; /* Alinhar itens à esquerda */
   }
 
   /* Estilos para os links (exemplo) */
