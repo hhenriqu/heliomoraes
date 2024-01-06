@@ -131,7 +131,7 @@
 
   .logoName {
     width: 100%;
-    height: 48px;
+    height: 120px;
     margin: 0 auto;
   }
 
@@ -435,6 +435,7 @@
     text-wrap: nowrap;
   }
 
+
 @media screen and (max-width: 768px) {
   body {
     font-family: 'Roboto', sans-serif;
@@ -487,7 +488,9 @@
 
   .home {
     width: 80%;
+    height: fit-content;
     margin: 0 auto;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -514,12 +517,14 @@
   }
 
   .homeText {
+    max-width: 640px;
     text-overflow: none;
     text-align: justify;
   }
 
   .logoName {
     width: 100%;
+    height: 50px;
     margin: 0 auto;
   }
 
@@ -616,23 +621,29 @@
   }
 
   .techStackWrapper {
+    text-align: center;
     display: flex;
-    margin-top: 120px;
-    gap: 16px;
+    flex-direction: column;
+    margin: 0 auto;
   }
 
-  .techStackWrapper img {
-    width: 48px;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
   }
 
-  .techStackWrapper p {
-    font-size: 24px;
-    font-weight: 800;
+  .grid-container img {
+    max-width: 48px;
+    max-height: 48px;
+    width: auto;
+    height: auto;
   }
-
   .about {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    margin: 0 auto;
+    padding: 36px 12px;
     background: var(--cor-fundo-second);
     display: flex;
     flex-direction: column;
@@ -643,7 +654,9 @@
 
   .aboutWrapper {
     display: flex;
-    gap: 64px;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 24px;
   }
 
   .aboutWrapper img {
@@ -652,7 +665,7 @@
   }
 
   .aboutTexts {
-    width: 500px;
+    width: 100%;
     text-align: justify;
   }
 
