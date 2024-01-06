@@ -682,8 +682,8 @@
   }
 
   .projects {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    margin: 0 auto;
+    padding: 36px 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -691,25 +691,29 @@
   }
 
   .proWrapperTitle {
+    margin-left: 0;
+    max-width: 100%;
     text-align: start;
+    text-wrap: wrap;
   }
 
   .projectWrapper {
-    max-width: 990px;
+    max-width: 90%;
     border-radius: 25px;
     background: var(--cor-fundo-second);
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
 
     padding: 20px;
-    gap: 64px;
+    gap: 18px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .projectImage {
-    width: 530px;
+    width: 90%;
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -726,7 +730,7 @@
   }
 
   .imagem {
-    width: 530px;
+    width: 100%;
     height: 100%;
     flex-shrink: 0;
     transition: transform 1s ease; /* Adicionando transição para suavizar a rolagem */
