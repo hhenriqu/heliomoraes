@@ -48,6 +48,8 @@ const translations = {
     'project-tech':'Tech Stack',
     'projectOne-title':'Energisa - Nova Agência',
     'projectOne-text':'A digital agency for one of the largest energy companies in Brazil. The website has all user management (Payments, verifications, membership and transfers), and also for designers (Registrations, monitoring and approvals of works)',
+    'projectTwo-title':'Energisa - Inovação',
+    'projectTwo-text':'Website aimed at employees, with guidelines, projects, team and internal news. In addition to the website, a CMS was developed to manage content changes.',
     'contact-title': 'Contact',
     'contact-subtitle': "Don't be shy! Hit me up! 👉"
   }
