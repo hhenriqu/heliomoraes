@@ -20,6 +20,8 @@ const translations = {
     'project-tech':'Tecnologias aplicadas',
     'projectOne-title':'Energisa - Nova Agência',
     'projectOne-text':'Uma agência digital para uma das maiores empresas de energia do Brasil. O site conta com toda a parte de gestão do usuário(Pagamentos, verificações, adesão e transferências), e também de projetistas (Cadastros, acompanhamentos e aprovaçoes de obras)',
+    'projectTwo-title':'Energisa - Inovação',
+    'projectTwo-text':'Site voltado aos colaboradores, com orientações, projetos, equipe e noticias internas. Foi desenvolvido além do site um CMS para gerenciar as mudanças dos conteúdos.',
     'contact-title': 'Contato',
     'contact-subtitle': 'Não seja tímido! Me chama! 👉',
       
